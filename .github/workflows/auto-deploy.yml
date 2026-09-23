@@ -72,8 +72,6 @@ jobs:
           # fi
         
           if [ -f xoilacztv.py ]; then
-            # will overwrite previous xoilacztv, if the condition matches
-            # python xoilacztv.py https://xoilacz.vip xoilacztv.m3u  & 
             python xoilacztv.py https://xoilacz.io xoilacztv.m3u  & 
           fi
 
@@ -106,7 +104,7 @@ jobs:
           rm -f ${{ secrets.NAME_THTHETHAO }}
           rm -f ${{ secrets.NAME_TTTHETHAO }}
           mkdir -p src
-          ls -lh
+          # ls -lh
 
           echo "#EXTM3U" >> lastupdated.m3u
           echo '#EXTINF:-1 tvg-logo="" group-title="Updated" , $(date -u +'%Y-%m-%dT%H:%MZ')' >> lastupdated.m3u
@@ -189,17 +187,18 @@ jobs:
             cat ${{ secrets.NAME_TTTHETHAO }} >> ${{ secrets.NAME_THTHETHAO }}
           fi
           echo " " >> ${{ secrets.NAME_THTHETHAO }}
-          # ls -lh
+          
+          ls -lh
 
           echo "Last updated: $(date -u +'%Y-%m-%dT%H:%M:%SZ')" > lastupdated.txt
 
           [ -f ${{ secrets.NAME_THTHETHAO }} ] && cp ${{ secrets.NAME_THTHETHAO }} src/
-          [ -f ${{ secrets.NAME_THETHAO }} ] && cp ${{ secrets.NAME_THETHAO }} src/
+          # [ -f ${{ secrets.NAME_THETHAO }} ] && cp ${{ secrets.NAME_THETHAO }} src/
           [ -f ${{ secrets.NAME_TTTHETHAO }} ] && cp ${{ secrets.NAME_TTTHETHAO }} src/
 
           [ -f keys.json ] && cp keys.json src/
           
-          ls -lh src/
+          # ls -lh src/
 
           
       - name: Setup Pages
