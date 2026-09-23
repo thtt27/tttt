@@ -44,7 +44,9 @@ jobs:
       - name: Show current time
         run: |
           echo "Current datetime: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          python helloworld.py
+          if [ -f helloworld.py ]; then
+            python helloworld.py
+          fi
           git pull
           
       - name: Download file via curl
