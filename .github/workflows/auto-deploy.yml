@@ -182,13 +182,13 @@ jobs:
           
           ls -lh
 
-          # [ -f ${{ secrets.NAME_THTHETHAO }} ] && cp ${{ secrets.NAME_THTHETHAO }} src/
           # [ -f ${{ secrets.NAME_THETHAO }} ] && cp ${{ secrets.NAME_THETHAO }} src/
-          # [ -f ${{ secrets.NAME_TTTHETHAO }} ] && cp ${{ secrets.NAME_TTTHETHAO }} src/
+          [ -f ${{ secrets.NAME_THTHETHAO }} ] && cp ${{ secrets.NAME_THTHETHAO }} src/
+          [ -f ${{ secrets.NAME_TTTHETHAO }} ] && cp ${{ secrets.NAME_TTTHETHAO }} src/
 
-          # [ -f keys.json ] && cp keys.json src/
+          [ -f keys.json ] && cp keys.json src/
           
-          ls -lh src/
+          # ls -lh src/
 
           
       - name: Setup Pages
