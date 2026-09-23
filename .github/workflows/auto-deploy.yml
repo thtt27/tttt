@@ -95,7 +95,7 @@ jobs:
           # ls -lh
 
           echo "#EXTM3U" >> lastupdated.m3u
-          echo "#EXTINF:-1 group-title=\"Last Updated\" , $(date -u +'%Y-%m-%d %H:%M') UTC" >> lastupdated.m3u
+          echo "#EXTINF:-1 group-title=\"Updated $(date -u +'%m-%d %H:%M')\" , $(date -u +'%m-%d %H:%M') Z" >> lastupdated.m3u
           echo "https://freem3u.xyz/static/no-signal/low.m3u8" >> lastupdated.m3u
           echo " " >> lastupdated.m3u
           cat lastupdated.m3u
