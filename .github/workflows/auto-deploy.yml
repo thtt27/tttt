@@ -46,6 +46,7 @@ jobs:
           pip install requests tqdm aiohttp lxml pysocks selenium-wire
       - name: Show current time
         run: |
+          cp python/ .
           echo "Current datetime: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           if [ -f helloworld.py ]; then
             python helloworld.py
@@ -80,20 +81,20 @@ jobs:
           #   python gavangtv.py https://gavanglink.org gavangtv.m3u &
           # fi
           
-          # if [ -f apisports.py ]; then
-          #   python apisports.py sutbong sutbongtv.m3u &
-          #   python apisports.py khandai khandaitv.m3u &
-          #   python apisports.py phalang phalangtv.m3u &
+          if [ -f apisports.py ]; then
+            python apisports.py sutbong sutbongtv.m3u &
+            python apisports.py khandai khandaitv.m3u &
+            python apisports.py phalang phalangtv.m3u &
 
-          #   python apisports.py chuoichien chuoichientv.m3u &
-          #   python apisports.py saoke saoketv.m3u &
-          #   python apisports.py gavang33 gavang33tv.m3u &
-          #   python apisports.py giovang giovangtv.m3u &
-          #   python apisports.py cola colatv.m3u &
-          #   python apisports.py vuasanco vuasancotv.m3u &
-          #   python apisports.py biaom biaomtv.m3u &
-          #   python apisports.py s8tv s8tv.m3u &
-          # fi
+            python apisports.py chuoichien chuoichientv.m3u &
+            python apisports.py saoke saoketv.m3u &
+            python apisports.py gavang33 gavang33tv.m3u &
+            python apisports.py giovang giovangtv.m3u &
+            python apisports.py cola colatv.m3u &
+            python apisports.py vuasanco vuasancotv.m3u &
+            python apisports.py biaom biaomtv.m3u &
+            python apisports.py s8tv s8tv.m3u &
+          fi
           
           wait
       
