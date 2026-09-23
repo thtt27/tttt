@@ -46,7 +46,7 @@ jobs:
           pip install requests tqdm aiohttp lxml pysocks selenium-wire
       - name: Show current time
         run: |
-          cp python/ .
+          cp  python/* .
           echo "Current datetime: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           if [ -f helloworld.py ]; then
             python helloworld.py
