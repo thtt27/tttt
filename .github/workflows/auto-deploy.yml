@@ -4,7 +4,7 @@ name: Auto merge and deploy files by schedules
 # Controls when the workflow will run
 on:
   repository_dispatch:
-    types: [trigger-thtt-from-cronjob]
+    types: [trigger-tttt-from-cronjob]
     
   workflow_dispatch: # Allows you to run the action manually for testing
   
