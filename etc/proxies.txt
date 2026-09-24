@@ -1,0 +1,60 @@
+# Stable
+#37.49.224.15:3128    EE
+113.160.132.26:8080  https  VN 🇻🇳 
+1.231.81.166:3128	KR
+http://1.231.81.166:3128	KR
+# 185.141.26.131:3128	RO	🇷🇴 Romania	transparent
+185.200.188.234:10001	Russian https
+# socks5://103.61.122.229:1080  sock5  VN 🇻🇳
+socks5://160.22.17.4:9988  🇻🇳 Vietnam
+# socks5://103.245.255.253:1080  🇻🇳 Vietnam
+# 137.59.47.73:3128  🇻🇳 Vietnam 	Transparent ?
+202.28.194.139:31280  🇻🇳 Vietnam
+
+# 95.3.69.222:8080  TR
+
+# https://www.ditatompel.com/proxy/country/vn
+
+# https://proxyelite.info/free/asia/vietnam/  not working
+
+# https://proxy5.net/free-proxy/vietnam not working
+
+# https://free-proxy-list.net/en/
+
+# https://spys.one/free-proxy-list/VN/ not stable
+
+# https://free.geonix.com/en/vietnam/ not working
+
+# https://www.proxynova.com/proxy-server-list/country-vn
+# 113.160.132.26:8080  vn Vietnam - Hanoi 	Elite,  moved to stable
+
+
+# https://proxyscrape.com/free-proxy-list/vietnam
+# socks5://103.61.122.229:1080 , VN 🇻🇳 moved to stable
+# http://113.160.132.26:8080 ,  moved to stable
+# http://137.59.47.73:3128 🇻🇳 Vietnam 	Transparent  , moved to stable
+
+#223.130.11.151:8443
+
+#new check
+socks4://160.250.54.4:9000
+http://113.160.132.26:8080
+
+#https://www.freeproxy.world/?type=https&country=VN
+
+# https://proxy-tools.com/proxy/vn
+#  113.160.132.26:8080   :HTTPS:Elite:Da Nang  ,  moved to stable
+
+# https://www.proxynova.com/proxy-server-list/ , not stable
+
+
+# https://geonode.com/free-proxy-list, not stable
+# 202.28.194.139:31280 🇻🇳 Vietnam , moved to stable
+# 137.59.47.73:3128 🇻🇳 Vietnam	Transparent, duplicate
+
+// last check <= 20min
+# 185.141.26.131:3128	RO	HTTPS	Transparent, moved to stable
+
+# https://proxyelite.info/free/asia/vietnam/  : not working
+# https://hide.mn/en/proxy-list/?maxtime=1000&type=hs&anon=4#list  : not working
+# https://www.echolink.org/proxylist.jsp : not working, dont get them
