@@ -55,9 +55,9 @@ jobs:
           
       - name: Get links to M3U files
         run: |
-          # if [ -f testproxies.py ]; then
-          #   python testproxies.py etc/proxies.txt &
-          # fi
+          if [ -f testproxies.py ]; then
+            python testproxies.py etc/proxies.txt &
+          fi
         
           if [ -f xoilacztv.py ]; then
             python xoilacztv.py https://xoilacz.io xoilacztv.m3u  & 
